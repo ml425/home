@@ -1,0 +1,129 @@
+/*
+ * @Author: meilin 
+ * @Date: 2020-04-02 21:17:40 
+ * @Last Modified by: meilin
+ * @Last Modified time: 2020-04-11 19:39:51
+ */
+/* 将‘在售’恢复成黑成绿色  ‘成交’设置成绿色 */
+.header_left_list>*:nth-child(2){
+    color: #394043;
+}
+.header_left_list>*:nth-child(3){
+    color: #00ae66;
+}
+/* 内容区右边的推荐消去上边的padding */
+.content .content_right{
+    padding: 0;
+}
+/* 内容区左边的更改 */
+.right_address{
+    width: 500px;
+    overflow: hidden;
+}
+.right_address>span{
+    cursor: auto;
+}
+.right_address>span:hover{
+    text-decoration: none;
+}
+.right_address>span:nth-child(3){
+    color: #db4c3f;
+    font-size: 20px;
+    text-align: right;
+    font-weight: bold;
+    font-family: 'tahoma';
+    float: right;
+}
+.right_detail{
+    margin-top: 12px;
+}
+.right_condition{
+    font-size: 14px;
+    margin-top: 12px;
+    color: #616669;
+}
+.right_consult{
+    font-size: 14px;
+    margin-top: 12px;
+    color: #616669;
+}
+.right_consult>span:nth-child(2){
+    font-size: 12px;
+    cursor: pointer;
+}
+.right_consult>span:nth-child(2):hover{
+    text-decoration: underline;
+}
+.right_consult>span:nth-child(3){
+    width: 76px;
+    height: 22px;
+    margin-left: 15px;
+    display: inline-block;
+    /* 消除标签之间的空格 */
+    font-size: 0;
+    color: #00AE66;
+    border-radius: 2px;
+    border: 1px solid #00AE66;
+    cursor: pointer;
+}
+.right_consult>span:nth-child(3)>span{
+    font-size: 12px;
+    line-height: 22px;
+    display: inline-block;
+}
+.right_sales>div:nth-child(2){
+    font-size: 14px;
+    margin-top: 12px;
+    color: #394043;
+}
+.right_sales>div:nth-child(2)>span{
+    font-weight: bold;
+    font-family: 'tahoma';
+}
+/* 小图标的设置 */
+.right_address i{
+    width: 13px;
+    height: 15px;
+    background-position: -441px -220px;
+}
+.right_detail i{
+    width: 14px;
+    height: 14px;
+    background-position: -398px -238px;
+}
+.right_condition i{
+    width: 14px;
+    height: 14px;
+    background-position: -594px -146px;
+}
+.right_coll i{
+    width: 15px;
+    height: 14px;
+    background-position: -552px -130px;
+}
+.right_consult>i{
+    width: 14px;
+    height: 17px;
+    background-position: -413px -220px;
+}
+.right_consult>span:nth-child(3)>i{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    /* 按比例缩小 */
+    transform: scale(0.75);
+    background-image: url(../images/sprite.png);
+    background-position: -474px -185px;
+}
+/* 尾部信息更改 */
+.footer_two span:nth-child(1){
+    background-color: #394043;
+    color: #fff;
+}
+.footer_three>div{
+    width: 1000px;
+}
+.footer_three>div>span{
+    white-space: nowrap;
+}
+

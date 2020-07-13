@@ -1,0 +1,173 @@
+/*
+ * @Author: meilin 
+ * @Date: 2020-04-02 21:17:35 
+ * @Last Modified by: meilin
+ * @Last Modified time: 2020-04-11 20:10:03
+ */
+ /* 导航栏‘小区’的字体颜色更改 */
+.header_nav_left a:nth-child(2){
+    color: hsl(180, 1%, 67%);
+}
+.header_nav_left a:nth-child(7){
+    color: #fff;
+}
+/* 将‘在售’和‘成交’恢复成黑成绿色  ‘小区’设置成绿色 */
+.header_left_list>*:nth-child(3){
+    color: #394043;
+}
+.header_left_list>*:nth-child(4){
+    color: #00ae66;
+}
+/* 筛选区的高度更改 */
+.filtrate{
+    height: 185px;
+}
+/* 内容区左边的第三个div 合计 */
+.content-total{
+    width: 910px;
+    /* 消除浮动 */
+    overflow: hidden;
+}
+.content-total>span:nth-child(2){
+    float: right;
+    font-size: 12px;
+    font-weight: normal;
+    color: #394043;
+    cursor: pointer;
+}
+.content-total>span:nth-child(2):hover{
+    text-decoration: underline;
+}
+/* 内容区左边第四个div详细房源的第三个、第九个、第十四个的图片 */
+.content-detail>div:nth-child(3)>div:first-child,.content-detail>div:nth-child(9)>div:first-child,.content-detail>div:nth-child(14)>div:first-child{
+    background-color: #f5f5f6;
+}
+.content-detail>div:nth-child(3)>div:first-child>img:first-child,.content-detail>div:nth-child(9)>div:first-child>img:first-child,.content-detail>div:nth-child(14)>div:first-child>img:first-child{
+    width: 95px;
+    height: 15px;
+    margin: 75px 65px;
+}
+/* 内容区左边具体房源的右边的介绍 */
+/* 第二行 */
+.right_address{
+    width: 550px;
+}
+.right_address>span{
+    color: #616669;
+}
+.right_address>span:nth-child(2)>p{
+    display: inline-block;
+    cursor: pointer;
+}
+.right_address>span:nth-child(2)>p:hover{
+    text-decoration: underline;
+}
+.right_address>span:nth-child(2)>span{
+    color: #cecece;
+    margin: 0 10px 0;
+}
+.right_address>span:nth-child(3){
+    font-size: 14px;
+}
+.right_address>span:nth-child(3)>span{
+    font-size: 26px;
+    margin-right: 5px;
+    cursor: auto;
+}
+.right_address>span:nth-child(3)>span:hover{
+    text-decoration: none;
+}
+/* 第三行 收藏 */
+.right_coll{
+    width: 640px;
+    overflow: hidden;
+    margin-top: 1px;
+}
+.right_coll>span:nth-child(2)>span{
+    margin-right: 7px;
+    cursor: pointer;
+}
+.right_coll>span:nth-child(2)>span:hover{
+    text-decoration: underline;
+}
+.right_coll>span:nth-child(3){
+    text-align: right;
+    color: #a9abab;
+    font-size: 12px;
+    float: right;
+}
+/* 第七行 总价 */
+.right_sales>div>span{
+    color: #000;
+    cursor: pointer;
+}
+.right_sales:hover{
+    text-decoration: underline;
+}
+
+/* 内容区左边最下面一个div的设置 */
+.content-page{
+    height: 30px;
+    padding: 10px 0 100px;
+    margin-top: 0;
+    overflow: hidden;
+}
+.content-page>div>div{
+    padding-bottom: 25px;
+    color: #ccc;
+}
+/* 内容区右边的推荐恢复上边的padding */
+.content .content_right{
+    padding: 30px 0;
+}
+/* 内容区右边推荐的第一个div 图标 */
+.contnet_right_one{
+    text-align: left;
+}
+.contnet_right_one>div{
+    line-height: 12px;
+    margin-top: 5px;
+    background-color: #fff;
+    cursor: auto;
+}
+.contnet_right_one div:hover{
+    background-color: #fff;
+}
+.contnet_right_one>div:first-child{
+    color: #394043;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+}
+.contnet_right_one>div:nth-child(2){
+    color: #a9abab;
+    font-size: 12px;
+    line-height: 19px;
+}
+.contnet_right_one>div:nth-child(3){
+    width: 179px;
+    color: #394043;
+    font-size: 14px;
+    line-height: 19px;
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 11px 0;
+    text-align: center;
+    cursor: pointer;
+}
+.contnet_right_one>div:nth-child(3):hover{
+    background-color: rgb(245, 241, 241);
+}
+/* 尾部信息 */
+.footer_two span:nth-child(1){
+    background-color: #121212;
+    color: #888c8e;
+}
+.footer_two span:nth-child(6){
+    background-color: #394043;
+    color: #fff;
+}
+.footer_three>span{
+    margin-top: 15px;
+    display: inline-block;
+}

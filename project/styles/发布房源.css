@@ -1,0 +1,1009 @@
+/*
+ * @Author: meilin 
+ * @Date: 2020-03-11 17:24:50 
+ * @Last Modified by: meilin
+ * @Last Modified time: 2020-04-11 20:48:15
+ */
+ /* 导航栏 */
+ .header_nav{
+    height: 38px;
+    background-color: #394043;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 38px;
+}
+.header_nav>div{
+    width: 1185px;
+    margin: 0 auto;
+}
+.header_nav_left{
+    float: left;
+    margin-left: 17px;
+}
+.header_nav_left a{
+    display: inline;
+    color: hsl(180, 1%, 67%);
+    margin-right : 18px;
+    cursor: pointer;
+}
+/* 鼠标悬停在导航处的a标签上的样式 */
+.header_nav_left a:hover{
+    color: #fff;
+}
+/* 头部导航栏的右边设置样式 */
+.header_nav .header_nav_right{
+    float: right;
+    color: #fff;
+}
+.header_nav .header_nav_right div{
+    display: inline-block;
+    margin-right:17px;
+}
+.header_nav .header_nav_right>div:first-child{
+    position: relative;
+    right: -1px;
+}
+.header_nav .header_nav_right div>i{
+    /* 设置为行内元素块级展示就可设置宽高了 */
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url(../images/sprite.png);
+    position: relative;
+    top: 1.5px;
+    margin-right:6px;
+}
+/* 所有div孩子中的第一个里面的i 弄出小图标 */
+.header_nav .header_nav_right>div:first-child i{
+    background-position: -554px -173px;
+    position: relative;
+    top: 1px;
+    right: -1px;
+}
+.header_nav .header_nav_right>div:nth-child(2) i{
+    background-position: -495px -220px;
+}
+/* 给登录注册设置鼠标样式和悬停样式 */
+.header_nav .header_nav_right>div:first-child span{
+    cursor: pointer;
+}
+.header_nav .header_nav_right>div:first-child span:hover{
+    text-decoration: underline;
+}
+
+/* 头部搜索区 */
+.header{
+    background-color: #f5f5f6;
+    padding: 26px 0px;
+}
+.header>div{
+    width: 1150px;
+    margin: 0 auto;
+}
+.header_top{
+    /* 消除浮动 */
+    overflow: hidden;
+}
+.header_left{
+    float: left;
+}
+.header_left{
+    /* 对它内部的子元素进行布局  垂直居中 */
+    display: inline-flex;
+    justify-content: space-between;
+}
+/* 设置logo图标 */
+.header_left>i{
+    display: inline-block;
+    width: 103px;
+    height: 32px;
+    background-image: url(../images/sprite.png);
+    background-position: -120px -284px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.header_left span{
+    width: 65px;
+    line-height: 32px;
+    font-size: 16px;
+    color: #394043;
+    margin-right: 30px;
+    cursor: pointer;
+}        
+/* 将‘我要卖房’设置成绿色 */
+.header_left>*:nth-child(2){
+    color: #00ae66;
+}   
+/* 头部右边的下载链家APP */
+.header_right{
+    color: #323333;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    float: right;
+}
+.header_right:hover{
+    text-decoration: underline;
+}
+/* 当鼠标悬停在header_right上面时二维码显示 */
+.header_right:hover .qrcode{
+    display: block;
+}
+.header_right i{
+    display: inline-block;
+    width: 15px;
+    height: 23px;
+    background-image: url(../images/sprite.png);
+    background-position: -399px -215px;
+    position: relative;
+    top: 3px;
+    right: 4px;
+}
+/* 设置下载链家APP二维码 */
+.qrcode{
+    width: 196px;
+    height: 234px;
+    box-sizing: border-box;
+    padding: 28px;
+    /* 背景颜色和阴影 */
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(13,4,9,0.2);
+    /* 让它脱离文档流 */
+    position: absolute;
+    /* 调整位置 */
+    margin-left: -50px;
+    /* 内部文本居中 */
+    text-align: center;
+    /* 默认隐藏 */
+    display: none;
+}
+.qrcode img{
+    width: 124px;
+    height: 124px;
+    /* 让二维码水平居中 */
+    margin: 0 auto;
+}
+.qrcode>div:nth-child(2){
+    font-size: 12px;
+    margin-top: 19px;
+    /* 字体比父元素的字体粗 */
+    font-weight: bold;
+}
+.qrcode>div:nth-child(3){
+    font-size: 12px;
+    margin-top: 5px;
+    color: #999;
+}
+.header_bottom{
+    text-align: center;
+    margin: 40px 0 40px;
+}
+.header_bottom>p:first-child{
+    font-size: 33px;
+    font-weight: bold;
+    color: #333;
+}
+.header_bottom>p:nth-child(2){
+    font-size: 16px;
+    color: #878787;
+    margin-top: 15px;
+}
+
+/* 筛选区 */
+.filtrate{
+    width: 990px;
+    /* height: 240px; */
+    margin: 55px auto 60px;
+    font-size: 12px;
+    color: #394043;
+    overflow: hidden;
+}
+.filtrate_left{
+    width: 590px;
+    float: left;
+}
+.filtrate_left>div{
+    line-height: 66px;
+    border-bottom: 1px solid #eee;
+    /* 消去子标签之间的空格 */
+    font-size: 0;
+}
+.filtrate_left>div>span:first-child{
+    width: 120px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.filtrate_left_one>span:nth-child(2){
+    color: #9c9fa1;
+    font-size: 14px;
+}
+.filtrate_left>div>input{
+    line-height: 40px;
+    background-color: #f5f5f6;
+    border: none;
+}
+.filtrate_left_two>input{
+    width: 470px;
+}
+.filtrate_left_three>input{
+    width: 136px;
+    padding-left: 10px;
+    margin-right: 15px;
+}
+.filtrate_left_three>input:nth-child(4){
+    margin-right: 0;
+}
+.filtrate_left_four>input{
+    width: 210px;
+}
+.filtrate_left_four>span{
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.filtrate_left_four>a{
+    display: inline-block;
+    font-size: 12px;
+    color: #009de8;
+    margin-left: 76px;
+    cursor: pointer;
+}
+.filtrate_left_four>a:hover{
+    text-decoration: underline;
+}
+.filtrate_left_five>input,.filtrate_left_six>input{
+    width: 250px;
+}
+.filtrate_right{
+    width: 340px;
+    float: right;
+    background-color: #f5f5f6;
+    box-shadow: 0 3px 7px 0 rgba(0,0,0,0.14);
+}
+.filtrate_right>div{
+    border-top: 1px solid #e6e6e6;
+    height: 38px;
+    padding: 20px 28px;
+}
+.filtrate_right>div:first-child{
+    height: 50px;
+}
+.filtrate_right>div:nth-child(5){
+    height: 20px;
+}
+.filtrate_right_one{
+    background-color: #394043;
+    color: #fff;
+    /* 为子元素提供定位条件 */
+    position: relative;
+}
+.filtrate_right_one>p:first-child{
+    font-size: 14px;
+}
+.filtrate_right_one>p:nth-child(2){
+    font-size: 22px;
+    margin-top: 6px;
+    font-weight: bold;
+}
+.filtrate_right_one>div>i{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url(../images/发布房源/sprite.png) -427px -163px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.filtrate_right_one>div:hover .qrcode2{
+    display: block;
+}
+/* 设置下载链家APP二维码 */
+.qrcode2{
+    width: 196px;
+    height: 234px;
+    box-sizing: border-box;
+    padding: 28px 40px 28px 30px;
+    background: url(../images/发布房源/sprite.png) 0 0;
+    /* 让它脱离文档流 */
+    position: absolute;
+    /* 调整位置 */
+    top: -30px;
+    right: 30px;
+    /* 内部文本居中 */
+    text-align: center;
+    /* 默认隐藏 */
+    display: none;
+}
+.qrcode2 img{
+    width: 124px;
+    height: 124px;
+    /* 让二维码水平居中 */
+    margin: 0 auto;
+}
+.qrcode2>div:nth-child(2){
+    font-size: 12px;
+    margin-top: 20px;
+    /* 字体比父元素的字体粗 */
+    font-weight: bold;
+    color: #394043;
+}
+.qrcode2>div:nth-child(3){
+    font-size: 12px;
+    margin-top: 5px;
+    color: #999;
+}
+.filtrate_right>div>div:first-child{
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+.filtrate_right>div>div:first-child:hover{
+    text-decoration: underline;
+}
+.filtrate_right>div>div:nth-child(2){
+    /* 消除浮动 */
+    overflow: hidden;
+    margin-top: 10px;
+}
+.filtrate_right>div>div:nth-child(2)>span:first-child{
+    float: left;
+    font-size: 12px;
+    color: #aaa;
+}
+.filtrate_right>div>div:nth-child(2)>span:nth-child(2){
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    color: #e4393c;
+}
+.filtrate_right_five>a{
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+.filtrate_right_five>a:hover{
+    text-decoration: underline;
+}
+
+/* 内容区 */
+.content{
+    /* 清楚子元素浮动的影响 */
+    overflow: hidden;
+}
+/* 提交委托与卖房流程 */
+/* 提交委托按钮 */
+.content_one_submit>div{
+    width: 190px;
+    line-height: 55px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    background-color: #00ac65;
+    border-radius: 2px;
+    cursor: pointer;
+}
+/*卖房流程  */
+.content_one_flow{
+    width: 990px;
+    margin:55px auto 60px;
+}
+.content_one_title{
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+.content_one_title::before{
+    content: "";
+    width: 430px;
+    height: 1px;
+    display: inline-block;
+    background-color: #eee;
+    position: relative;
+    top: -5px;
+    left: -25px;
+}
+.content_one_title::after{
+    content: "";
+    width: 430px;
+    height: 1px;
+    display: inline-block;
+    background-color: #eee;
+    position: relative;
+    top: -5px;
+    left: 25px;
+}
+.content_one_content{
+    margin-top: 45px;
+}
+.content_one_content>div{
+    width: 195px;
+    height: 48px;
+    display: inline-block;
+    margin-right: 65px;
+    overflow: hidden;
+}
+.content_one_content>div:nth-child(4){
+    margin-right: 0;
+}
+.content_one_content>div>i{
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    background: #d0d1d2 url(../images/发布房源/sprite.png) -340px -238px;
+    border-radius: 50%;
+}
+.content_one_content>div:nth-child(2)>i{
+    background-position: -259px -292px;
+}
+.content_one_content>div:nth-child(3)>i{
+    background-position: -307px -292px;
+}
+.content_one_content>div:nth-child(4)>i{
+    background-position: -388px -238px;
+}
+.content_one_content>div>div{
+    float: right;
+    margin-right: 10px;
+}
+.content_one_content>div>div>span{
+    display: block;
+}
+.content_one_content>div>div>span:first-child{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #394043;
+}
+.content_one_content>div>div>span:nth-child(2){
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+}
+/* 估价 */
+.content_two{
+    padding: 60px 0;
+    color: #fff;
+    background-image: url(../images/发布房源/flower.png);
+}
+.content_two>div{
+    width: 990px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.content_two_left{
+    float: left;
+}
+.content_two_left>p:first-child{
+    font-size: 28px;
+}
+.content_two_left>p:nth-child(2){
+    font-size: 14px;
+    margin-top: 8px;
+}
+.content_two_right{
+    float: right;
+    width: 619px;
+    height: 54px;
+    color: #fff;
+    /* 消去子标签之间的空格 */
+    font-size: 0;
+    /* 为子元素提供定位条件 */
+    position: relative;
+    /* 消除浮动 */
+    overflow:hidden;
+    cursor: pointer;
+}
+.content_two_right>span:first-child{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-color: #fff;
+    opacity: 0.1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.content_two_right>i{
+    width: 24px;
+    height: 26px;
+    display: inline-block;
+    background: url(../images/发布房源/sprite.png) -427px -137px;
+    margin: 0 20px 0 20px;
+    position: relative;
+    top: 5px;
+}
+.content_two_right>span{
+    font-size: 20px;
+    color: #e1dfd6;
+    line-height: 54px;
+}
+.content_two_right>span:nth-child(4){
+    width: 155px;   
+    color: #000;
+    font-weight: bold;
+    text-align: right;
+    background-image: url(../images/发布房源/sprite.png);      
+    background-position: -104px -292px;
+    padding-right: 24px;
+    box-sizing: border-box;
+    float: right;
+}
+/* 大图片区 */
+.content_three{
+    height: 670px;
+    background: url(../images/发布房源/banner.jpg) center top no-repeat;
+}
+/* 左边的内容 */
+.content_three_left{
+    width: 990px;
+    padding-top: 200px;
+    margin: 0 auto;
+}
+.content_three_left_title{
+    font-size: 60px;
+    color: #394043;
+    font-weight: bold;
+}
+.content_three_left>p{
+    line-height: 30px;
+    font-size: 22px;
+    color: #394043;
+}
+.content_three_left_app{
+    width:320px;
+    margin-top: 70px;
+    /* 消除浮动 */
+    overflow: hidden;
+}
+.content_three_left_app>div{
+    float: left;
+    width: 170px;
+}
+.content_three_left_app>div>i{
+    width: 170px;
+    height: 54px;
+    display: inline-block;
+    background: url(../images/发布房源/sprite.png) -170px -238px;
+    cursor: pointer;
+}
+.content_three_left_app >div>i:nth-child(2){
+    background-position: 0 -238px;
+    margin-top: 10px;
+}
+.content_three_left_app>img{
+    width: 124px;
+    height: 124px;
+    float: right;
+}
+
+/* 尾部信息 */
+.footer{
+    height: 426px;
+    background-image: url(../images/footer.jpg);
+    color: #fff;
+}
+.footer>div{
+    width: 1150px;
+    margin: 0 auto;
+}
+/* 第一行 */
+.footer_one{
+    border-bottom: 1px solid #393939;
+    overflow: hidden;
+}
+.footer_one div span{
+    line-height: 76px;
+    font-size: 14px;
+}
+.footer_one_left{
+    width: 500px;
+    float: left;
+}
+.footer_one_left span{
+    width: 66px;
+    display: inline-block;
+    cursor: pointer;
+}
+.footer_one_right{
+    float: right;
+}
+.footer_one_right span{
+    color: #7dcfa0;
+}
+/* 第二行 */
+.footer_two{
+    padding: 16px 0;
+}
+.footer_two span{
+    background-color: #121212;
+    color: #888c8e;
+    font-size: 12px;
+    padding: 8px 10px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.footer_two span:nth-child(1){
+    background-color: #394043;
+    color: #fff;
+}
+.footer_two span:hover{
+    background-color: #394043;
+    color: #fff;
+}
+/* 第三行 */
+.footer_three{
+    height: 109px;
+    margin-top: 10px;
+    border-bottom: 1px solid #393939;
+    clear: both;
+}
+.footer_three>div{
+    width: 1000px;
+}
+.footer_three span{
+    font-size: 12px;
+    color: #888c8e;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 5px;
+    display: inline-block;
+    white-space: nowrap;
+}
+.footer_three span:hover{
+    text-decoration: underline;
+}
+/* 第四行 */
+.footer_four{
+    padding: 20px 0;
+}
+.footer_four div span{ 
+    color: #888c8e;
+    font-size: 12px;
+    line-height: 18px;
+    display: inline-block;
+}
+.footer_four div:nth-child(3) span{
+    position: relative;
+    top: -5px;
+}
+
+/* 右侧导航 */
+.nav_right{
+    height: 100%;
+    width: 38px;
+    padding-top: 98px;
+    position:fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: -2px 0px 5px rgba(0,0,0,0.2);
+    /* 设置定位之后的顺序，数字大的显示在上面 默认为0*/
+    z-index: 1;
+}
+.nav_right>div i{
+    height: 38px;
+    width: 38px;
+    display: inline-block;
+    background-image: url(../images/sidebar_spriteV5.png);
+    cursor: pointer;
+}
+.nav_right>div>div{
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    background-color: #00ae66;
+    position: absolute;
+    right: 38px;
+    /* 默认隐藏 */
+    display: none;
+}
+.nav_right_one>i{
+    background-position: -38px 0;
+}
+.nav_right_one>div{
+    width: 100px;
+    line-height: 38px;
+    top: 98px;
+}
+.nav_right>div:first-child>div>div{
+    width: 5px;
+    box-sizing: border-box;
+    border: 5px solid rgb(57,64,67);
+    border-right: 1px solid rgb(57,64,67);
+    border-left: 5px solid #00ae46;
+    position: absolute;
+    right: -6px;
+    top: 15px;
+}
+.nav_right_one:hover .nav_right_one_div{
+    display: block;
+}
+.nav_right_two i{
+    background-position: -38px -515px;
+}
+.nav_right>div:nth-child(2)>div{
+    width: 350px;
+    height: 230px;
+    border: 1px solid #f5f5f6;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    background-color: #fff;
+    padding: 15px 0 25px;
+    top: 60px;
+}
+.nav_right>div:nth-child(2)>div>i{
+    width: 99px;
+    height: 94px;
+    display: inline-block;
+    background: url(../images/empty_cart.png) no-repeat;
+    margin: 40px auto 30px;
+    cursor: auto;
+}
+.nav_right_two_div>div{
+    color: #969696;
+    font-size: 17px;
+    text-align: center;
+}
+.nav_right_two_div>div:nth-child(2){
+    line-height: 17px;
+    margin-bottom: 30px;
+}
+.nav_right_two_div>div:nth-child(3){
+    width: 110px;
+    font-weight: bold;
+    color: #394043;
+    line-height: 17px;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.nav_right_two_div>div:nth-child(4){
+    width: 5px;
+    box-sizing: border-box;
+    border: 5px solid rgb(57,64,67);
+    border-right: 1px solid rgb(57,64,67);
+    border-left: 5px solid #fff;
+    position: absolute;
+    right: -6px;
+    top: 93px;
+}
+.nav_right_two:hover .nav_right_two_div{
+    display: block;
+}
+.nav_right_three{
+    height: 0.5px;
+    width: 19px;
+    background-color: rgb(128, 123, 123);
+    margin: 10px auto;
+}
+.nav_right>div:nth-child(4) i{
+    height: 50px;
+    background-position: -38px -91px;
+}
+.nav_right_four>div{
+    width: 70px;
+    line-height: 50px;
+    top: 203px;
+}
+.nav_right_four_div>div{
+    width: 5px;
+    box-sizing: border-box;
+    border: 5px solid rgb(57,64,67);
+    border-right: 1px solid rgb(57,64,67);
+    border-left: 5px solid #00ae46;
+    position: absolute;
+    right: -6px;
+    top: 20px;
+}
+.nav_right_four:hover .nav_right_four_div{
+    display: block;
+}
+.nav_right>div:nth-child(5) i{
+    background-position: -38px -463px;
+    height: 50px;
+}
+.nav_right_five>div{
+    width: 90px;
+    line-height: 50px;
+    top: 257px;
+}
+.nav_right_five_div>div{
+    width: 5px;
+    box-sizing: border-box;
+    border: 5px solid rgb(57,64,67);
+    border-right: 1px solid rgb(57,64,67);
+    border-left: 5px solid #00ae46;
+    position: absolute;
+    right: -6px;
+    top: 20px;
+}
+.nav_right_five:hover .nav_right_five_div{
+    display: block;
+}
+.nav_right_six i{
+    background-position: -38px -186px;
+}
+.nav_right_six div{
+    width: 100px;
+    line-height: 38px;
+    top: 311px;
+}
+.nav_right_six_div>div{
+    width: 5px;
+    box-sizing: border-box;
+    border: 5px solid rgb(57,64,67);
+    border-right: 1px solid rgb(57,64,67);
+    border-left: 5px solid #00ae46;
+    position: absolute;
+    right: -6px;
+    top: 13px;
+}
+.nav_right_six:hover .nav_right_six_div{
+    display: block;
+}
+.nav_right_seven>i{
+    background-position: -38px -224px;
+}
+.nav_right>div:nth-child(7)>div{
+    width: 100px;
+    height: 110px;
+    color: #000;
+    background-color: #fff;
+    top: 330px;
+    padding: 15px 5px 7px;
+    width: wrap;
+}
+.nav_right_seven>div img{
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+}
+.nav_right_seven>div span{
+    font-size: 12px;
+    position: relative;
+    top: 10px;
+}
+.nav_right_seven_div>div{
+    width: 5px;
+    box-sizing: border-box;
+    border: 5px solid rgb(57,64,67);
+    border-right: 1px solid rgb(57,64,67);
+    border-left: 5px solid #fff;
+    position: absolute;
+    right: -6px;
+    top: 36px;
+}
+.nav_right_seven:hover .nav_right_seven_div{
+    display: block;
+}
+.nav_right_eight i{
+    background-position: -38px -265px;
+}
+.nav_right_eight div{
+    width: 80px;
+    line-height: 38px;
+    top: 395px;
+}
+.nav_right_eight_div>div{
+    width: 5px;
+    box-sizing: border-box;
+    border: 5px solid rgb(57,64,67);
+    border-right: 1px solid rgb(57,64,67);
+    border-left: 5px solid #00ae46;
+    position: absolute;
+    right: -6px;
+    top: 15px;
+}
+.nav_right_eight:hover .nav_right_eight_div{
+    display: block;
+}
+.nav_right_nine i{
+    background-position: -38px -142px;
+}
+.nav_right_nine div{
+    width: 130px;
+    line-height: 38px;
+    top: 437px;
+}
+.nav_right_nine_div>div{
+    width: 5px;
+    box-sizing: border-box;
+    border: 5px solid rgb(57,64,67);
+    border-right: 1px solid rgb(57,64,67);
+    border-left: 5px solid #00ae46;
+    position: absolute;
+    right: -6px;
+    top: 15px;
+}
+.nav_right_nine:hover .nav_right_nine_div{
+    display: block;
+}
+.nav_right_ten i{
+    background-position: -38px -302px;
+}
+.nav_right_ten div{
+    width: 80px;
+    line-height: 38px;
+    top: 479px;
+}
+.nav_right_ten_div>div{
+    width: 5px;
+    box-sizing: border-box;
+    border: 5px solid rgb(57,64,67);
+    border-right: 1px solid rgb(57,64,67);
+    border-left: 5px solid #00ae46;
+    position: absolute;
+    right: -6px;
+    top: 15px;
+}
+.nav_right_ten:hover .nav_right_ten_div{
+    display: block;
+}
+.nav_right_eleven{
+    position: absolute;
+    bottom: 110px;
+    /* 返回顶部的图标默认隐藏 */
+    display: none;
+}
+.nav_right_eleven a{
+    height: 38px;
+    width: 38px;
+    display: inline-block;
+    background: url(../images/sidebar_spriteV5.png) -38px -338px;
+    cursor: pointer;
+}
+.nav_right_eleven a:hover{
+    background-position-x: 0px;
+}
+.nav_right_eleven div{
+    width: 80px;
+    line-height: 38px;
+    top: 0px;
+}
+.nav_right_eleven_div>div{
+    width: 5px;
+    box-sizing: border-box;
+    border: 5px solid rgb(57,64,67);
+    border-right: 1px solid rgb(57,64,67);
+    border-left: 5px solid #00ae46;
+    position: absolute;
+    right: -6px;
+    top: 15px;
+}
+.nav_right_eleven:hover .nav_right_eleven_div{
+    display: block;
+}
+.nav_right>div i:hover {
+    background-position-x: 0px;
+}
+
+/* 右下角的在线咨询 */
+.online{
+    width: 240px;
+    height: 40px;
+    background-color: white;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.45);
+    position: fixed;
+    right: 38px;
+    bottom: 0px;
+    cursor: pointer;
+}
+.online i{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-image: url(../images/lianjiaim.png);
+    background-position: 12px 12px;
+    background-repeat: no-repeat;
+}
+.online span{
+    font-size: 14px;
+    position: relative;
+    top: -14px;
+    left: -4px;
+}

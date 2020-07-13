@@ -1,0 +1,17 @@
+/*
+ * @Author: meilin 
+ * @Date: 2020-03-11 17:24:44 
+ * @Last Modified by: meilin
+ * @Last Modified time: 2020-03-11 17:53:27
+ */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Sans GB","Microsoft Yahei UI","Microsoft Yahei","微软雅黑",'Segoe UI',Tahoma,"宋体b8b\4f53",SimSun,sans-serif;
+}
+a,header,nav,aside,address,article,section,footer{
+    display: block;
+}
+a{
+    text-decoration: none;
+}

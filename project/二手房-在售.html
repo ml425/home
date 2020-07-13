@@ -1,0 +1,1891 @@
+<!-- /*
+ * @Author: meilin 
+ * @Date: 2020-03-11 17:24:55 
+ * @Last Modified by:   meilin 
+ * @Last Modified time: 2020-03-11 17:24:55 
+ */ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在售</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/二手房-在售.css">
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- 导航栏 -->
+        <nav class="header_nav" id="header_nav">
+            <div>
+                <div class="header_nav_left">
+                    <a href="首页.html">首页</a>
+                     <a href="二手房-在售.html">二手房</a>
+                     <a href="#">新房</a>
+                     <a href="#">租房</a>
+                     <a href="#">海外</a>
+                     <a href="#">商业办公</a>
+                     <a href="小区.html">小区</a>
+                     <a href="#">经纪人</a>
+                     <a href="#">指南</a>
+                     <a href="#">房价</a>
+                     <a href="#">工具</a>
+                     <a href="发布房源.html">发布房源</a>
+                     <a href="企业汇.html">企业汇</a>
+                </div>
+                <div class="header_nav_right">
+                    <div>
+                        <i></i>
+                        <span>登录</span>/<span>注册</span>
+                    </div>
+                    <div>
+                        <i></i>
+                        <span>热线电话1010-9666</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- 头部 -->
+        <header class="header">
+            <div>
+                <div class="header_left">
+                    <div class="header_left_list">
+                        <i></i>
+                        <a href="二手房-在售.html">在售</a>
+                        <a href="成交.html">成交</a>
+                        <a href="小区.html">小区</a>
+                        <a href="">房价</a>
+                        <a href="">地图找房</a>
+                    </div>
+                    <!-- 搜索框 -->
+                    <div class="header_left_search">
+                        <input type="search" placeholder="请输入区域、商圈或小区名开始找房">
+                        <div class="header_left_show">
+                            <div><span>热门搜索</span></div>
+                            <div><span>新龙城</span></div>
+                            <div><span>天通苑</span></div>
+                            <div><span>北京新天地</span></div>
+                            <div><span>远洋山水</span></div>
+                            <div><span>望京</span></div>
+                            <div><span>北京像素</span></div>
+                            <div><span>草房站附近房源</span></div>
+                            <div><span>13号地铁线</span></div>
+                        </div>
+                        <i></i>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <i></i>
+                    <span>下载链家APP</span>
+                    <div class="qrcode">
+                        <img src="./images/qrcode.png" alt="">
+                        <div>使用链家APP</div>
+                        <div>随时随地查看新上房源</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 筛选区 -->
+        <article class="filtrate">
+            <!-- 第一行 -->
+            <div class="filtrate_first">
+                <span class="filtrate_first_title">位置</span>
+                <span>区域<i></i></span>
+                <span>地铁线<i></i></span>
+            </div>
+            <hr>
+            <!-- 第二行 -->
+            <div class="filtrate_second">
+                <span>东城</span>
+                <span>西城</span>
+                <span>朝阳</span>
+                <span>海淀</span>
+                <span>丰台</span>
+                <span>石景山</span>
+                <span>通州</span>
+                <span>昌平</span>
+                <span>大兴</span>
+                <span>亦庄开发区</span>
+                <span>顺义</span>
+                <span>房山</span>
+                <span>门头沟</span>
+                <span>平谷</span>
+                <span>怀柔</span>
+                <span>密云</span>
+                <span>延庆</span>
+            </div>
+            <hr>
+            <!-- 第三大行 -->
+            <div class="filtrate_third">
+                <!-- 售价 -->
+                <div class="filtrate_third_sale">
+                    <p class="filtrate_first_title">售价</p>
+                    <i></i><span>&nbsp;&nbsp;200万以下</span>
+                    <i></i><span>&nbsp;&nbsp;200-250万</span>
+                    <i></i><span>&nbsp;&nbsp;250-300万</span>
+                    <i></i><span>&nbsp;&nbsp;300-400万</span>
+                    <i></i><span>&nbsp;&nbsp;400-500万</span>
+                    <i></i><span>&nbsp;&nbsp;500-800万</span>
+                    <span>+ 更多及自定义</span>
+                </div>
+                <!-- 房型 -->
+                <div class="filtrate_third_shape">
+                    <p class="filtrate_first_title">房型</p>
+                    <i></i><span>&nbsp;&nbsp;一室</span>
+                    <i></i><span>&nbsp;&nbsp;二室</span>
+                    <i></i><span>&nbsp;&nbsp;三室</span>
+                    <i></i><span>&nbsp;&nbsp;四室</span>
+                    <i></i><span>&nbsp;&nbsp;五室及以上</span>
+                </div>
+                <!-- 面积 -->
+                <div class="filtrate_third_area">
+                    <p class="filtrate_first_title">面积</p>
+                    <i></i><span>&nbsp;&nbsp;50㎡以下</span>
+                    <i></i><span>&nbsp;&nbsp;50-70㎡</span>
+                    <i></i><span>&nbsp;&nbsp;70-90㎡</span>
+                    <i></i><span>&nbsp;&nbsp;90-110㎡</span>
+                    <i></i><span>&nbsp;&nbsp;110-130㎡</span>
+                    <i></i><span>&nbsp;&nbsp;130-150㎡</span>
+                    <span>+ 更多及自定义</span>
+                </div>
+                <!-- 标签 -->
+                <div class="filtrate_third_label">
+                    <p class="filtrate_first_title">标签</p>
+                    <i></i><span>&nbsp;&nbsp;必看好房</span>
+                    <i></i><span>&nbsp;&nbsp;满五年</span>
+                    <i></i><span>&nbsp;&nbsp;满两年</span>
+                    <i></i><span>&nbsp;&nbsp;VR房源</span>
+                    <i></i><span>&nbsp;&nbsp;VR看装修</span>
+                    <i></i><span>&nbsp;&nbsp;7日新上</span>
+                    <span>+ 展开全部</span>
+                </div>
+                <!-- 更多选项 -->
+                <div>
+                    <span>更多选项</span><i></i>
+                </div>
+            </div>
+        </article>
+        <!-- 内容区 -->
+        <article class="content">
+            <!-- 左边的房子展示 -->
+            <section class="content-left">
+                <!-- 第一个div -->
+                <div class="content-header">
+                    <div class="content-header_left">
+                        <div>默认排序</div>
+                        <div>最新发布</div>
+                        <div>房屋总价</div>
+                        <div>房屋单价</div>
+                        <div>房屋面积</div>
+                    </div>
+                    <div class="content-header_right"><i></i><i></i></div>
+                </div>
+                <!-- 第二个div合计 -->
+                <div class="content-total">
+                    共找到 <span>89191</span> 套北京二手房
+                </div>
+                <!-- 第三个div详细房源 -->
+                <div class="content-detail">
+                    <!-- 第一个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/1 - pc1_5B2LwKELZ_1.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>南北两居，看房随时，中间楼层，</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>四平园</span> - <span>陶然亭</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 59.52平米 | 南 北 | 简装 | 中楼层(共6层) | 1996年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>120人关注 / 4个月以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>近地铁</span>
+                                <span>VR房源</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>669</span>万</div>
+                                <div>单价112400元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/2 - pc1_XtvBobBjD_1.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>南北两居室 配合满五年 户型双卫全明格局</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>首开熙悦山熹园1号院</span> - <span>长阳</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 90.47平米 | 南 北 | 精装 | 高楼层(共18层) | 2013年建 | 塔楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>30人关注 / 23天以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>近地铁</span>
+                                <span>VR房源</span>
+                                <span>房本满两年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>330</span>万</div>
+                                <div>单价36477元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第三个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/3 - prod-431e6216-4361-4f38-9cd5-4c8926857347.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>中建国际港 南北通透两居室 毛坯房 看房方便 满两年</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>中建国际港</span> - <span>枣园</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室2厅 | 90.55平米 | 南 北 | 毛坯 | 中楼层(共29层) | 2015年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>91人关注 / 10个月以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>近地铁</span>
+                                <span>VR看装修</span>
+                                <span>房本满两年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>470</span>万</div>
+                                <div>单价51906元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第四个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/4 - prod-dccc75c5-8a9c-4308-8806-3fde2ceedcab.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>国风美唐二期 全南两居 有钥匙 随时可看</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>首开国风美唐二期</span> - <span>回龙观</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 93.92平米 | 南 | 毛坯 | 低楼层(共20层) | 2014年建 | 板塔结合
+                                </span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>87人关注 / 8个月以前发布
+                                </span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>508</span>万</div>
+                                <div>单价54089元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第五个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/5 - pc1_2U5WrHWPq_1.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>满五唯一大两居 高楼层 采光好 价格低 看房方便</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>建邦华庭西区</span> - <span>长阳</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 93.94平米 | 南 | 简装 | 中楼层(共16层) | 2013年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>17人关注 / 17天以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>近地铁</span>
+                                <span>VR房源</span>
+                                <span>房本满五年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>358</span>万</div>
+                                <div>单价38110元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 中间的图片 -->
+                    <div class="content-detail_img">
+                        <img src="./images/26 - 34c0e698b9ad8360f4bc1f31079aa618.png" alt="">
+                    </div>
+                    <!-- 第六个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/6 - pc1_hk9DKkNk6_1.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>商品房，电梯板楼，南边通透，环境不错</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>紫金新干线二期</span> - <span>霍营</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室2厅 | 93.48平米 | 南 北 | 简装 | 中楼层(共10层) | 2013年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>68人关注 / 5个月以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>VR看装修</span>
+                                <span>房本满两年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>449</span>万</div>
+                                <div>单价48032元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第七个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/7 - prod-0b488b1f-6b67-484d-b5f2-ee219a3fa966.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>长阳地铁站 ，长阳半岛，万科物业</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>长阳半岛怡和路1号院</span> - <span>长阳</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 96.01平米 | 南 北 | 精装 | 中楼层(共20层) | 2013年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>18人关注 / 12天以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>近地铁</span>
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>368</span>万</div>
+                                <div>单价38330元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第八个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/8 - 5f6b9cbd-04ac-4fc1-b966-19b9441ec957_1000.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>南北通透精装修，花了三十多万可拎包入住，满五年唯一</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>融景城</span> - <span>八角</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 90.1平米 | 南 北 | 精装 | 25层 | 2011年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>100人关注 / 5个月以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>535</span>万</div>
+                                <div>单价59379元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第九个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/9 - pc1_5flq1UCzy_1.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>满两年 主卧室带阳台 南北通透两居室 诚意出售</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>融泽嘉园</span> - <span>回龙观</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 97.99平米 | 南 北 | 简装 | 28层 | 2014年建 | 板塔结合</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>257人关注 / 8个月以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>VR看装修</span>
+                                <span>房本满两年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>439</span>万</div>
+                                <div>单价44801元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第十个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/10 - pc1_LfgJ5dEZZ.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>火星园经典南向全明两居室 观景位置 采光视野无遮挡</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>火星园</span> - <span>太阳宫</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 99.39平米 | 南 | 精装 | 中楼层(共24层) | 2011年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>40人关注 / 26天以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>近地铁</span>
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>1170</span>万</div>
+                                <div>单价117719元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第十一个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/11 - pc1_RLF34U1nC_1.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>南中轴路旁 花园洋房，满五唯一，电梯板楼</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>金色漫香郡南区</span> - <span>大兴其它</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 91.32平米 | 南 北 | 精装 | 中楼层(共9层) | 2012年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>93人关注 / 5个月以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>298</span>万</div>
+                                <div>单价32633元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第十二个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/12 - pc1_Cc3HhARYk_1.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>京贸国际城南向两居，客厅卧室落地窗，采光好无遮挡</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>京贸国际城西区</span> - <span>武夷花园</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 91.05平米 | 南 | 简装 | 中楼层(共35层) | 2011年建 | 板塔结合</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>85人关注 / 3个月以前发布布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>488</span>万</div>
+                                <div>单价53597元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第十三个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/13 - pc1_MmmbwaAO9_1.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>本房南北通透户型，楼层好，采光充足，诚心出售。</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>鸿顺园东区</span> - <span>良乡</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 93.95平米 | 南 北 | 精装 | 高楼层(共15层) | 2011年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>79人关注 / 3个月以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>近地铁</span>
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>286</span>万</div>
+                                <div>单价30442元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第十四个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/14 - pc1_5kT8JXic2_1.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>新兴家园 满五年 电梯房 南北通透</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>新兴家园</span> - <span>大兴其它</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室2厅 | 90.38平米 | 南 北 | 简装 | 中楼层(共10层) | 2014年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>48人关注 / 2个月以前发布布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>259</span>万</div>
+                                <div>单价28657元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第十五个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/15 - 8c67a2d2-1179-4344-bd19-ed3db08ff018_1000.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>商满五唯一 东二旗全明好房 诚心推荐</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>东二旗新村</span> - <span>北七家</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 96.4平米 | 南 北 | 简装 | 高楼层(共15层) | 2012年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>84人关注 / 2个月以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>329</span>万</div>
+                                <div>单价34129/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第十六个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/16 - f518313d-8f7f-4f3c-8e6a-d63fd7c9a587_1000.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>鸿坤礼域府南向精装两居 上下两层 动静分离诚 意出售</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>鸿坤理想城礼域府</span> - <span>西红门</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 105.67平米 | 南 | 精装 | 中楼层(共12层) | 2011年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>73人关注 / 1个月以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>VR看装修</span>
+                                <span>房本满两年</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>481</span>万</div>
+                                <div>单价45520元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第十七个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/17 - pc1_zdiGjuFgD_1.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>龙湖南区精装南北通透两居 带露台 看房随时</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>龙湖香醍漫步四区南区</span> - <span>马坡</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室2厅 | 101.82平米 | 南 北 | 精装 | 高楼层(共8层) | 2012年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>23人关注 / 4个月以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>VR看装修</span>
+                                <span>房本满两年</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>381</span>万</div>
+                                <div>单价37419元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第十八个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/18 - pc1_KPk7Od63M_1.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>金色漫香郡北区 正规两居室 一层有花园</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>金色漫香郡北区</span> - <span>大兴其它</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室2厅 | 90.41平米 | 南 北 | 精装 | 底层(共6层) | 2012年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>53人关注 / 4个月以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>331</span>万</div>
+                                <div>单价36611元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第十九个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/19 - pc1_H7zMHyIv7_1.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>红杉公馆2015年新楼，电梯好楼层，精装修</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>靓景明居</span> - <span>九棵树(家乐福)</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 92.44平米 | 南 西 | 精装 | 高楼层(共13层) | 2015年建 | 板塔结合</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>44人关注 / 3个月以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>VR看装修</span>
+                                <span>房本满两年</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>400</span>万</div>
+                                <div>单价43272元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二十个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/20 - prod-7c491dd5-d473-429c-8552-3cac23d2501b.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>高楼层精装修宜居大两居业主高诚意可给换房周期等满五</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>华业东方玫瑰B区</span> - <span>临河里</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 90.86平米 | 南 | 精装 | 高楼层(共27层) | 2012年建 | 板塔结合</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>30人关注 / 1个月以前发布布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>440</span>万</div>
+                                <div>单价48427元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二十一个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/21 - prod-9a821df4-06a3-4aa0-b89e-4d7bb9965d55.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>南北通透的两居室 电梯房</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>首座御园二区二期</span> - <span>大兴其它</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 94.53平米 | 南 北 | 简装 | 低楼层(共14层) | 2015年建 | 板塔结合</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>49人关注 / 一年前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>近地铁</span>
+                                <span>VR看装修</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>299</span>万</div>
+                                <div>单价31631元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二十二个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/22 - pc1_XWUlgXjlm_1.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>商满五唯一 东二旗全明好房 诚心推荐</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>东二旗新村</span> - <span>北七家</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室2厅 | 94.96平米 | 南 北 | 简装 | 中楼层(共9层) | 2012年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>75人关注 / 5个月以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>325</span>万</div>
+                                <div>单价34225元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二十三个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/23 - 0f7008bd-5b18-420c-a8dc-4a6b536b6035_1000.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>满五唯一 精装 南北双通透两居 中间楼层 不临街</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>首开国风美唐一期</span> - <span>回龙观</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 90.98平米 | 南 北 | 精装 | 中楼层(共11层) | 2012年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>78人关注 / 5个月以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>近地铁</span>
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>555</span>万</div>
+                                <div>单价61003元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二十四个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/24 - 398fa0c0-d257-4c04-aa97-55400dfc7b38_1000.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>满五年唯一，南北通透，面宽4.3米，视野开阔临河观景</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>清缘东里</span> - <span>清河</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 92.36平米 | 南 北 | 精装 | 中楼层(共13层) | 2005年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>7人关注 / 4天以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>685</span>万</div>
+                                <div>单价74167元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二十五个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/25 - prod-657be448-9ca3-4c12-beb9-bd47b625db84.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>低密度板楼社区，南北两居，客餐厅分离，视野采光好</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>金隅凤麟洲</span> - <span>朝青</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室2厅 | 105.1平米 | 南 北 | 精装 | 9层 | 2008年建 | 板塔结合</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>129人关注 / 一年前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>726</span>万</div>
+                                <div>单价69078元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二十六个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/26 - prod-66bbec8c-ca9d-4ab0-8b00-f89a7dc77dff.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>富力板楼 满五唯一 全南向采光房</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>富力又一城C区</span> - <span>豆各庄</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 90.33平米 | 南 | 精装 | 低楼层(共18层) | 2009年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>226人关注 / 11个月以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>近地铁</span>
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>490</span>万</div>
+                                <div>单价54246元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二十七个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/27 - 17354958-376a-44cc-a3d8-908ce658cffb.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>碧桂园三期 南北通透两居室 满五唯一楼层好视野开阔</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>碧桂园小区C区</span> - <span>长阳</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 93.35平米 | 南 北 | 简装 | 高楼层(共11层) | 2006年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>122人关注 / 2个月以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>265</span>万</div>
+                                <div>单价28388元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二十八个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/28 - pc1_KU5YLKsio_1.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>此房商品房，房子满五年，在京唯一住房， 带电梯</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>东领鉴筑</span> - <span>定福庄</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 97.79平米 | 南 | 精装 | 中楼层(共7层) | 2005年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>33人关注 / 1个月以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>485</span>万</div>
+                                <div>单价49597元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二十九个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/29 - prod-ca1e6f6e-c95d-4f25-ba44-de5f1ff79e9b.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>矩阵南北通透2居，电梯商品房，落地窗阳台</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>矩阵三期</span> - <span>回龙观</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 92平米 | 南 北 | 简装 | 顶层(共8层) | 2007年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>29人关注 / 15天以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>近地铁</span>
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>455</span>万</div>
+                                <div>单价49457元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第三十个房源 -->
+                    <div class="content-detail_item">
+                        <!-- 左边的图片 -->
+                        <div class="detail_item_left">
+                            <img src="./images/30 - prod-4414dc7c-0223-4672-9265-382c18970925.jpg.296x216.jpg" alt="">
+                            <img src="./images/vrgold.png" alt="">
+                        </div>
+                        <!-- 右边的介绍 -->
+                        <div class="detail_item_right">
+                            <!-- 第一行 -->
+                            <div class="right_title">
+                                <div class="right_title_left">
+                                    <span>6号线上的商品房，满五唯一，南北通透，带电梯。</span>
+                                    <span>必看好房</span>
+                                </div>
+                                <div class="right_title_right">
+                                    <span>加入对比</span>
+                                    <span>关注</span>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="right_address">
+                                <i></i>
+                                <span>美然动力A2区</span> - <span>定福庄</span>
+                            </div>
+                            <!-- 第三行 -->
+                            <div class="right_detail">
+                                <i></i>
+                                <span>2室1厅 | 100.97平米 | 南 北 | 简装 | 顶层(共14层) | 2003年建 | 板楼</span>
+                            </div>
+                            <!-- 第四行  收藏 -->
+                            <div class="right_coll">
+                                <i></i>
+                                <span>272人关注 / 8个月以前发布</span>
+                            </div>
+                            <!-- 第五行 标签 -->
+                            <div class="right_lable">
+                                <span>近地铁</span>
+                                <span>VR看装修</span>
+                                <span>房本满五年</span>
+                                <span>随时看房</span>
+                            </div>
+                            <!-- 第六行 总价和单价 -->
+                            <div class="right_sales">
+                                <div><span>460</span>万</div>
+                                <div>单价45559元/平米</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <!-- 第四个div分页 -->
+                <div class="content-page">
+                    <div class="content-page_left">
+                        <span>北京房产网</span> > <span>北京二手房</span>
+                    </div>
+                    <div class="content-page_right">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>...</span>
+                        <span>100</span>
+                        <span>下一页</span>
+                    </div>
+                </div>
+            </section>
+            <!-- 右边的推荐 -->
+            <section class="content_right">
+                <!-- 图标 -->
+                <div class="contnet_right_one">
+                    <i></i>
+                    <div><span>试试地图找房</span></div>
+                </div>
+                <!-- 热门问答 -->
+                <div class="contnet_right_two">
+                    <div><span>热门问答</span></div>
+                    <div>
+                        <span>提交了购房资质审核以后，我的资质是否长期有效呢?</span>
+                        <span>23个回答 / 2016-05-27</span>
+                    </div>
+                    <div>
+                        <span>买二手房契税按几个点交?</span>
+                        <span>21个回答 / 2017-05-12</span>
+                    </div>
+                    <div>
+                        <span>女朋友是京籍，我不是，婚后买房能写我的名字吗?</span>
+                        <span>17个回答 / 2016-08-11</span>
+                    </div>
+                    <div>
+                        <span>北京新购房政策中家庭怎么定义?</span>
+                        <span>17个回答 / 2017-05-12</span>
+                    </div>
+                    <div>
+                        <span>我在购房资格审核后怀孕了，需要重新做审核吗？?</span>
+                        <span>12个回答 / 2016-06-12</span>
+                    </div>
+                </div>
+                <!-- 热门百科 -->
+                <div class="contnet_right_three">
+                    <div>
+                        <span>热门百科</span>
+                        <span>更多</span>
+                    </div>
+                    <div>
+                        <span>在北京贷款买房有哪些方式...</span>
+                        <i></i>
+                    </div>
+                    <div>
+                        <span>等额本息和等额本金还款哪...</span>
+                        <i></i>
+                    </div>
+                    <div>
+                        <span>新北京人如何申请公租房...</span>
+                        <i></i>
+                    </div>
+                    <div>
+                        <span>全款买二手房，需要走哪些...</span>
+                        <i></i>
+                    </div>
+                    <div>
+                        <span>在日本买房的流程是什么？...</span>
+                        <i></i>
+                    </div>
+                </div>
+                <!-- 下载链家APP -->
+                <div class="contnet_right_four">
+                    <div><span>下载链家APP</span></div>
+                    <div><img src="./images/getDownloadQr.png" alt=""></div>
+                    <div>
+                        <span>扫描上方二维码</span>
+                        <span>随时查看新房源</span>
+                        <span>了解更多 <img src="./images/index.png" alt=""></span>
+                    </div>
+                </div>
+                <!-- 固定定位的下载链家APP -->
+                <div class="contnet_right_five" id="display">
+                    <div><span>下载链家APP</span></div>
+                    <div><img src="./images/getDownloadQr.png" alt=""></div>
+                    <div>
+                        <span>扫描上方二维码</span>
+                        <span>随时查看新房源</span>
+                        <span>了解更多 <img src="./images/index.png" alt=""></span>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!-- 推荐楼盘区 -->
+        <article class="recommed">
+            <div>
+                <!-- 标题 -->
+                <div class="recommed_title"><span>推荐楼盘</span></div>
+                <!-- 图片 -->
+                <div class="recommed_content">
+                    <div>
+                        <img src="./images/recommeda.jpg" ><span>石景山 - 卓越万科翡翠山晓</span>
+                    </div>
+                    <div>
+                        <img src="./images/recommedb.jpg"><span>海淀 - 山屿西山著</span>
+                    </div>
+                    <div>
+                        <img src="./images/recommedc.jpg"><span>丰台 - 公园懿府</span>
+                    </div>
+                    <div>
+                        <img src="./images/recommedd.jpg"><span>亦庄开发区 - 林肯时代</span>
+                    </div>
+                    <div>
+                        <img src="./images/recommede.jpg"><span>朝阳 - 恭和家园</span>
+                    </div>
+                </div>
+                <!-- 价钱 -->
+                <div class="recommed_footer">
+                    <div>
+                        <span>425</span> <span>万/套</span>
+                    </div>
+                    <div>
+                        <span>53000</span> <span>元/平</span>
+                    </div>
+                    <div>
+                        <span>74000</span> <span>元/平</span>
+                    </div>
+                    <div>
+                        <span>42000</span> <span>元/平</span>
+                    </div>
+                    <div>
+                        <span>50000</span> <span>元/平</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 尾部信息 -->
+        <footer class="footer">
+            <div class="footer_one">
+                <div class="footer_one_left">
+                    <span>关于链家</span>
+                    <span>联系我们</span>
+                    <span>加入我们</span>
+                    <span>隐私声明</span>
+                    <span>网站地图</span>
+                    <span>友情链接</span> 
+                </div>   
+                <div class="footer_one_right">
+                    <span>官方客服 1010 9666</span>
+                </div>
+            </div>
+            <div class="footer_two">
+                <span>商圈二手房</span>
+                <span>热门二手房</span>
+                <span>热门小区</span>
+                <span>二手房</span>
+                <span>小区</span>
+                <span>楼盘</span>
+                <span>合作与友情链接</span>      
+            </div>
+            <div class="footer_three">
+                <span>北京玻璃网</span>
+                <span>北京智能家居</span>
+                <span>北京写字楼</span>
+            </div>
+            <div class="footer_four">
+                <div><span>链家网（北京）科技有限公司 | 网络经营许可证 京ICP备16057509号-2 | © Copyright©2010-2020 链家网Lianjia.com版权所有 | 营业执照</span></div>
+                <div><span>违法和不良信息举报电话：010-86440676 违法和不良信息举报邮箱：jubaoyouxiang@lianjia.com</span></div>
+                <div><img src="./images/23 - beian.png" alt=""> <span>京公网安备 11010802024019号</span></div>
+            </div>
+        </footer>
+        <!-- 右侧导航 -->
+        <nav class="nav_right">
+            <div class="nav_right_one">
+                <i></i>
+                <div class="nav_right_one_div">
+                    我关注的房源
+                    <div></div>
+                </div>
+            </div>
+            <div class="nav_right_two">
+                <i></i>
+                <div class="nav_right_two_div">
+                    <i></i>
+                    <div>暂无对比房源</div>
+                    <div>去选房 ></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="nav_right_three"></div>
+            <div class="nav_right_four">
+                <i></i>
+                <div class="nav_right_four_div">在线卖房
+                    <div></div>
+                </div>
+            </div>
+            <div class="nav_right_five">
+                <i></i>
+                <div class="nav_right_five_div">房贷计算器
+                    <div></div>
+                </div>
+            </div>
+            <div class="nav_right_six">
+                <i></i>
+                <div class="nav_right_six_div">安心服务承诺
+                    <div></div>
+                </div>
+            </div>
+            <div class="nav_right_seven">
+                <i></i>
+                <div class="nav_right_seven_div">
+                    <img src="./images/6 - getDownloadQr？location=site_middle&ljweb_channel_key=site_index.jpg" alt="">
+                    <span>链家微信小程序</span>
+                    <div></div>
+                </div>
+            </div>
+            <div class="nav_right_eight">
+                <i></i>
+                <div class="nav_right_eight_div">官方客服
+                    <div></div>
+                </div>
+            </div>
+            <div class="nav_right_nine">
+                <i></i>
+                <div class="nav_right_nine_div">开通面电话营销
+                    <div></div>
+                </div>
+            </div>
+            <div class="nav_right_ten">
+                <i></i>
+                <div class="nav_right_ten_div">反馈/投诉
+                    <div></div>
+                </div>
+            </div>
+            <div class="nav_right_eleven" id="top">
+                <a href="#header_nav"></a>
+                <div class="nav_right_eleven_div">返回顶部
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+        <!-- 右下角的在线咨询 -->
+        <div class="online">
+            <i></i>
+            <span>在线咨询</span>
+        </div>
+    </div>
+</body>
+</html>

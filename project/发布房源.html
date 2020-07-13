@@ -1,0 +1,375 @@
+<!-- /*
+ * @Author: meilin 
+ * @Date: 2020-03-11 17:24:55 
+ * @Last Modified by:   meilin 
+ * @Last Modified time: 2020-03-11 17:24:55 
+ */ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>发布房源</title>
+     <link rel="stylesheet" href="./styles/main.css">
+     <link rel="stylesheet" href="./styles/发布房源.css">
+     <script src="./js/返回顶部.js"></script>
+ </head>
+ <body>
+     <div class="container">
+         <!-- 导航栏 -->
+         <nav class="header_nav" id="header_nav">
+             <div>
+                 <div class="header_nav_left">
+                     <a href="首页.html">首页</a>
+                     <a href="二手房-在售.html">二手房</a>
+                     <a href="#">新房</a>
+                     <a href="#">租房</a>
+                     <a href="#">海外</a>
+                     <a href="#">商业办公</a>
+                     <a href="小区.html">小区</a>
+                     <a href="#">经纪人</a>
+                     <a href="#">指南</a>
+                     <a href="#">房价</a>
+                     <a href="#">工具</a>
+                     <a href="发布房源.html">发布房源</a>
+                     <a href="企业汇.html">企业汇</a>
+                 </div>
+                 <div class="header_nav_right">
+                     <div>
+                         <i></i>
+                         <span>登录</span>/<span>注册</span>
+                     </div>
+                     <div>
+                         <i></i>
+                         <span>热线电话1010-9666</span>
+                     </div>
+                 </div>
+             </div>
+         </nav>
+         <!-- 头部 -->
+         <header class="header">
+             <div>
+                 <div class="header_top">
+                    <div class="header_left">
+                            <i></i>
+                            <span>我要卖房</span>
+                            <span>我要估价</span>
+                            <span>委托出租</span>
+                    </div>
+                    <div class="header_right">
+                        <i></i>
+                        <span>下载链家APP</span>
+                        <div class="qrcode">
+                            <img src="./images/qrcode.png" alt="">
+                            <div>使用链家APP</div>
+                            <div>随时随地查看新上房源</div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="header_bottom">
+                     <p>发布出售房源</p>
+                     <p>8000+全国链家门店·10万+全国经纪人·链家倾情服务15年+</p>
+                 </div>
+             </div>
+         </header>
+         <!-- 筛选区 -->
+         <article class="filtrate">
+             <div class="filtrate_left">
+                 <div class="filtrate_left_one">
+                     <span>小区所在城市</span>
+                     <span>北京</span>
+                 </div>
+                 <div class="filtrate_left_two">
+                     <span>小区</span>
+                     <input type="text" placeholder="请输入小区名">
+                 </div>
+                 <div class="filtrate_left_three">
+                     <span>房屋地址</span>
+                     <input type="text" placeholder="楼栋号">
+                     <input type="text" placeholder="单元号">
+                     <input type="text" placeholder="门牌号">
+                 </div>
+                 <div class="filtrate_left_four">
+                     <span>期望售价</span>
+                     <input type="text" placeholder="请输入您期望卖出的价格">
+                     <span>万元</span>
+                     <a href="#">不太清楚如何定价？先估个价</a>
+                 </div>
+                 <div class="filtrate_left_five">
+                     <span>称呼</span>
+                     <input type="text" placeholder="我们该如何称呼您">
+                 </div>
+                 <div class="filtrate_left_six">
+                    <span>手机号码</span>
+                    <input type="text" placeholder="您的联系方式，方便我们及时与您联系">
+                 </div>
+             </div>
+             <div class="filtrate_right">
+                <div class="filtrate_right_one">
+                    <p>北京市 成交均价</p>
+                    <p>60015 元/㎡</p>
+                    <div>
+                        <i></i>
+                        <div class="qrcode2">
+                            <img src="./images/qrcode.png" alt="">
+                            <div>去链家APP提升卖房速度</div>
+                            <div>APP·移动卖房新体验</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtrate_right_two">
+                    <div>龙湖滟澜新宸西区 - 3室1厅/170.85平米</div>
+                    <div>
+                        <span>签约时间 2020-03-26</span>
+                        <span>540万</span>
+                    </div>
+                </div>
+                <div class="filtrate_right_three">
+                    <div>义宾南区 - 2室1厅/61.38平米</div>
+                    <div>
+                        <span>签约时间 2020-03-26</span>
+                        <span>217.5万</span>
+                    </div>
+                </div>
+                <div class="filtrate_right_four">
+                    <div>八角路小区 - 1室1厅/34.02平米</div>
+                    <div>
+                        <span>签约时间 2020-03-26</span>
+                        <span>155万</span>
+                    </div>
+                </div>
+                <div class="filtrate_right_five">
+                    <a href="#">查看更多成交明细</a>
+                </div>
+             </div>
+         </article>
+         <!-- 内容区 -->
+         <article class="content">
+             <!-- 提交委托与卖房流程 -->
+             <div class="content_one">
+                 <!-- 提交委托按钮 -->
+                 <div class="content_one_submit">
+                    <div>提交委托</div>
+                 </div>
+                 <!-- 卖房流程 -->
+                 <div class="content_one_flow">
+                     <div class="content_one_title"> 
+                        卖房全流程</div>
+                     <div class="content_one_content">
+                         <div>
+                             <i></i>
+                             <div>
+                                <span>发布房源</span>
+                                <span>在线上免费发布房源</span>
+                            </div>
+                         </div>
+                         <div>
+                            <i></i>
+                            <div>
+                                <span>核对房源</span>
+                                <span>30分钟内链家客服联系</span>
+                            </div>
+                         </div>
+                         <div>
+                            <i></i>
+                            <div>
+                                <span>在线销售</span>
+                                <span>在链家APP移动管理销售</span>
+                            </div>
+                         </div>
+                         <div>
+                            <i></i>
+                            <div>
+                                <span>签约出售</span>
+                                <span>签约过户链家全程服务</span>
+                            </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!-- 估价 -->
+             <div class="content_two">
+                 <div>
+                     <div class="content_two_left">
+                         <p>不知道如何定价？</p>
+                         <p>链家专业房屋估值，为您提供卖房买房价格参考</p>
+                     </div>
+                     <div class="content_two_right">
+                         <span></span>
+                         <i></i>
+                         <span>看看您的房子值多少钱？</span>
+                         <span>马上去估价</span>
+                     </div>
+                 </div>
+             </div>
+             <!-- 大图片区 -->
+            <div class="content_three">
+                <div>
+                   <!-- 左边的内容 -->
+                   <div class="content_three_left">
+                       <div class="content_three_left_title">去链家APP提升卖房速度</div>
+                       <p>登录业主中心查看同类房子实时成交动态、主动介绍房子吸引更多买家关注</p>
+                       <div class="content_three_left_app">
+                           <div>
+                               <i></i>
+                               <i></i>
+                           </div>
+                           <img src="./images/发布房源/getDownloadQr.png" alt="">
+                       </div>
+                   </div>
+               </div>
+            </div>
+         </article>
+         <!-- 尾部信息 -->
+         <footer class="footer">
+             <div class="footer_one">
+                 <div class="footer_one_left">
+                     <span>关于链家</span>
+                     <span>联系我们</span>
+                     <span>加入我们</span>
+                     <span>隐私声明</span>
+                     <span>网站地图</span>
+                     <span>友情链接</span> 
+                 </div>   
+                 <div class="footer_one_right">
+                     <span>官方客服 1010 9666</span>
+                 </div>
+             </div>
+             <div class="footer_two">
+                 <span>城市二手房</span>
+                 <span>房产资讯</span>
+                 <span>城区二手房</span>
+                 <span>城区租房</span>
+                 <span>城区小区</span>
+                 <span>热门小区</span>
+                 <span>热门问答</span> 
+                 <span>热门百科</span>             
+             </div>
+             <div class="footer_three">
+                 <div>
+                    <span>贵阳房产网</span>
+                    <span>达州房产网</span>
+                    <span>宜昌房产网</span>
+                    <span>洛阳房产网</span>
+                    <span>防城港房产网</span>
+                    <span>天津房产网</span>
+                    <span>广州房产网</span>
+                    <span>柳州房产网</span>
+                    <span>惠州房产网</span>
+                    <span>泰安房产网</span>
+                    <span>赤峰房产网</span>
+                    <span>哈尔滨房产网</span>
+                    <span>吉林房产网</span>
+                    <span>晋中房产网</span>
+                    <span>襄阳房产网</span>
+                    <span>临沂房产网</span>
+                    <span>佛山房产网</span>
+                    <span>周口房产网</span>
+                    <span>苏州房产网</span>
+                    <span>银川房产网</span>
+                    <span>烟台房产网</span>
+                    <span>大连房产网</span>
+                    <span>昆明房产网</span>
+                    <span>成都房产网</span>
+                    <span>桂林房产网</span>
+                    <span>南昌房产网</span>
+                    <span>菏泽房产网</span>
+                    <span>株洲房产网</span>
+                    <span>太原房产网</span>
+                    <span>廊坊房产网</span>
+                    <span>盐城房产网</span>
+                    <span>衢州房产网</span>
+                    <span>重庆房产网</span>
+                    <span>江门房产网</span>
+                    <span>九江房产网</span>
+                    <span>宁波房产网</span>
+                    <span>北海房产网</span>
+                    <span>无锡房产网</span>
+                    <span>上饶房产网</span>
+                    <span>西安房产网</span>  
+                </div>    
+             </div>
+             <div class="footer_four">
+                 <div><span>链家网（北京）科技有限公司 | 网络经营许可证 京ICP备16057509号-2 | © Copyright©2010-2020 链家网Lianjia.com版权所有 | 营业执照</span></div>
+                 <div><span>违法和不良信息举报电话：010-86440676 违法和不良信息举报邮箱：jubaoyouxiang@lianjia.com</span></div>
+                 <div><img src="./images/23 - beian.png" alt=""> <span>京公网安备 11010802024019号</span></div>
+             </div>
+         </footer>
+         <!-- 右侧导航 -->
+         <nav class="nav_right">
+             <div class="nav_right_one">
+                 <i></i>
+                 <div class="nav_right_one_div">
+                     我关注的房源
+                     <div></div>
+                 </div>
+             </div>
+             <div class="nav_right_two">
+                 <i></i>
+                 <div class="nav_right_two_div">
+                     <i></i>
+                     <div>暂无对比房源</div>
+                     <div>去选房 ></div>
+                     <div></div>
+                 </div>
+             </div>
+             <div class="nav_right_three"></div>
+             <div class="nav_right_four">
+                 <i></i>
+                 <div class="nav_right_four_div">在线卖房
+                     <div></div>
+                 </div>
+             </div>
+             <div class="nav_right_five">
+                 <i></i>
+                 <div class="nav_right_five_div">房贷计算器
+                     <div></div>
+                 </div>
+             </div>
+             <div class="nav_right_six">
+                 <i></i>
+                 <div class="nav_right_six_div">安心服务承诺
+                     <div></div>
+                 </div>
+             </div>
+             <div class="nav_right_seven">
+                 <i></i>
+                 <div class="nav_right_seven_div">
+                     <img src="./images/6 - getDownloadQr？location=site_middle&ljweb_channel_key=site_index.jpg" alt="">
+                     <span>链家微信小程序</span>
+                     <div></div>
+                 </div>
+             </div>
+             <div class="nav_right_eight">
+                 <i></i>
+                 <div class="nav_right_eight_div">官方客服
+                     <div></div>
+                 </div>
+             </div>
+             <div class="nav_right_nine">
+                 <i></i>
+                 <div class="nav_right_nine_div">开通面电话营销
+                     <div></div>
+                 </div>
+             </div>
+             <div class="nav_right_ten">
+                 <i></i>
+                 <div class="nav_right_ten_div">反馈/投诉
+                     <div></div>
+                 </div>
+             </div>
+             <div class="nav_right_eleven" id="top">
+                <a href="#header_nav"></a>
+                 <div class="nav_right_eleven_div">返回顶部
+                     <div></div>
+                 </div>
+             </div>
+         </nav>
+         <!-- 右下角的在线咨询 -->
+         <div class="online">
+             <i></i>
+             <span>在线咨询</span>
+         </div>
+     </div>
+ </body>
+ </html>
